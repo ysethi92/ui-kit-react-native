@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, Image} from 'react-native';
-//import Icon from 'react-native-vector-icons/EvilIcons';
-//import BackIcon from 'react-native-vector-icons/Feather';
 
-export default class Header extends Component {
+class Header extends Component {
   layoutType = () => {
     if (this.props.search && this.props.back) {
       return (
@@ -102,3 +100,5 @@ const styles = StyleSheet.create({
     height: 60,
   },
 });
+
+export { Header };
