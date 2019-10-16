@@ -13,14 +13,14 @@ export default class Header extends Component {
             {backgroundColor: this.props.backgroundColor},
           ]}>
           <Image
-            source={require('./left-arrow.png')}
+            source={require('../assets/left-arrow.png')}
             style={styles.backButton}
           />
           <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
             {this.props.headerText}
           </Text>
           <Image
-            source={require('./search.png')}
+            source={require('../assets/search.png')}
             style={styles.searchIconStyle}
           />
         </View>
@@ -37,7 +37,7 @@ export default class Header extends Component {
             {this.props.headerText}
           </Text>
           <Image
-            source={require('./search.png')}
+            source={require('../assets/search.png')}
             style={styles.searchIconStyle}
           />
         </View>
@@ -51,7 +51,7 @@ export default class Header extends Component {
             {backgroundColor: this.props.backgroundColor},
           ]}>
           <Image
-            source={require('./left-arrow.png')}
+            source={require('../assets/left-arrow.png')}
             style={styles.backButton}
           />
           <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
