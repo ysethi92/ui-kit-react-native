@@ -108,4 +108,4 @@ const styles = {
     }
 }
 
-export default Thumbnail;
+export { Thumbnail };
