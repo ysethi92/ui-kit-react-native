@@ -1,14 +1,9 @@
-// export { default as Icon } from './AvatarIcon';
-
-
-// export { default as Image } from './AvatarImage';
-
 import React from 'react';
 import { View, Text, Image } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 
 
-export default class Avatar extends React.Component {
+class Avatar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  size: props.size,
@@ -78,3 +73,5 @@ const styles = {
           alignItems: 'center',
       }
 }
+
+export {Avatar};
