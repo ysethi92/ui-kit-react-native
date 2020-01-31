@@ -1,72 +1,102 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {StatusBar,Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
+//import Icon from 'react-native-vector-icons/EvilIcons';
+//import BackIcon from 'react-native-vector-icons/Feather';
 
-class Header extends Component {
+export default class Header extends Component {
+  StatusBarDesign = () => {
+    return (
+      <View>
+        <StatusBar
+          barStyle = "default"
+          hidden = {this.props.hidden} />
+      </View>
+    )
+  };
   layoutType = () => {
+    const headerBackground = this.props.backgroundColor ? this.props.backgroundColor : '#0000FF';
+    const headerTextSize = this.props.textSize ? this.props.textSize : 22;
+    const headerTop = this.props.hidden ? 0 : 30;
+
     if (this.props.search && this.props.back) {
       return (
         <View
           style={[
             styles.viewStyle,
-            {backgroundColor: this.props.backgroundColor},
+            {marginTop: headerTop},
+            {backgroundColor: headerBackground},
           ]}>
-          <Image
-            source={require('../assets/left-arrow.png')}
-            style={styles.backButton}
-          />
-          <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
+          {this.StatusBarDesign()}
+          <TouchableOpacity onPress={this.props.onPress}>
+            <Image
+              source={require('../assests/left-arrow.png')}
+              style={styles.backButton}/>
+          </TouchableOpacity>
+          <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
             {this.props.headerText}
           </Text>
-          <Image
-            source={require('../assets/search.png')}
-            style={styles.searchIconStyle}
-          />
+          <TouchableOpacity onPress={this.props.onPress}>
+            <Image
+              source={require('../assests/search.png')}
+              style={styles.searchIconStyle}
+            />
+          </TouchableOpacity>
         </View>
       );
       //return <Image style={searchIconStyle} source={require('./search.png')} />
     } else if (this.props.search) {
-      return (
-        <View
-          style={[
-            styles.viewStyle,
-            {backgroundColor: this.props.backgroundColor},
-          ]}>
-          <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
-            {this.props.headerText}
-          </Text>
-          <Image
-            source={require('../assets/search.png')}
-            style={styles.searchIconStyle}
-          />
-        </View>
-      );
+        return (
+          <View
+            style={[
+              styles.viewStyle,
+              {marginTop: headerTop},
+              {backgroundColor: headerBackground},
+            ]}>
+            {this.StatusBarDesign()}
+            <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
+              {this.props.headerText}
+            </Text>
+            <TouchableOpacity onPress={this.props.onPress}>
+              <Image
+                source={require('../assests/search.png')}
+                style={styles.searchIconStyle}/>
+            </TouchableOpacity>
+          </View>
+        );
       //return <Image style={searchIconStyle} source={require('./search.png')} />
     } else if (this.props.back) {
-      return (
-        <View
-          style={[
-            styles.viewStyle,
-            {backgroundColor: this.props.backgroundColor},
-          ]}>
-          <Image
-            source={require('../assets/left-arrow.png')}
-            style={styles.backButton}
-          />
-          <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
-            {this.props.headerText}
-          </Text>
-        </View>
-      );
+        return (
+          <View
+            style={[
+              styles.viewStyle,
+              {marginTop: headerTop},
+              {backgroundColor: headerBackground},
+            ]}>
+            {this.StatusBarDesign()}
+            <TouchableOpacity onPress={this.props.onPress}>
+              <Image
+                source={require('../assests/left-arrow.png')}
+                style={styles.backButton}/>
+            </TouchableOpacity>
+            <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
+              {this.props.headerText}
+            </Text>
+          </View>
+        );
     } else {
-      <View
-        style={[
-          styles.viewStyle,
-          {backgroundColor: this.props.backgroundColor},
-        ]}>
-        <Text style={[styles.textStyle, {fontSize: this.props.textSize}]}>
-          {this.props.headerText}
-        </Text>
-      </View>
+        return (
+          <View
+            style={[
+              styles.viewStyle,
+              {marginTop: headerTop},
+              {backgroundColor: headerBackground},
+            ]}>
+            {this.StatusBarDesign()}
+            <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
+              {this.props.headerText}
+            </Text>
+          </View>
+        );
     }
   };
   render() {
@@ -86,7 +116,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     flex: 3,
     fontSize: 25,
-    marginLeft:40,
+    marginLeft: 40,
   },
   searchIconStyle: {
     marginTop: 20,
@@ -99,6 +129,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#0000FF',
     height: 60,
   },
+  containerDefault: {
+    alignItems: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderWidth: 1,
+    borderRadius: 6,
+    marginHorizontal: 10,
+    marginVertical: 10,
+  },
 });
-
-export { Header };
