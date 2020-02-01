@@ -1,5 +1,6 @@
 <Header
-        onPress={() => ToastAndroid.show('Please implment a specific task!!!', ToastAndroid.SHORT)}
+        onBackPressed={() => ToastAndroid.show('Please implement a specific task!!!', ToastAndroid.SHORT)}
+        onSearchPressed={() => ToastAndroid.show('Please implement a specific!!!', ToastAndroid.SHORT)}
         search
         back
         hidden={true}
