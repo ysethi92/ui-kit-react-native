@@ -29,7 +29,7 @@ export default class Header extends Component {
           {this.StatusBarDesign()}
           <TouchableOpacity onPress={this.props.onBackPressed}>
             <Image
-              source={require('../assests/left-arrow.png')}
+              source={require('../assets/left-arrow.png')}
               style={styles.backButton}/>
           </TouchableOpacity>
           <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
@@ -37,7 +37,7 @@ export default class Header extends Component {
           </Text>
           <TouchableOpacity onPress={this.props.onSearchPressed}>
             <Image
-              source={require('../assests/search.png')}
+              source={require('../assets/search.png')}
               style={styles.searchIconStyle}
             />
           </TouchableOpacity>
@@ -58,7 +58,7 @@ export default class Header extends Component {
             </Text>
             <TouchableOpacity onPress={this.props.onSearchPressed}>
               <Image
-                source={require('../assests/search.png')}
+                source={require('../assets/search.png')}
                 style={styles.searchIconStyle}/>
             </TouchableOpacity>
           </View>
@@ -75,7 +75,7 @@ export default class Header extends Component {
             {this.StatusBarDesign()}
             <TouchableOpacity onPress={this.props.onBackPressed}>
               <Image
-                source={require('../assests/left-arrow.png')}
+                source={require('../assets/left-arrow.png')}
                 style={styles.backButton}/>
             </TouchableOpacity>
             <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
