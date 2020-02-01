@@ -27,7 +27,7 @@ export default class Header extends Component {
             {backgroundColor: headerBackground},
           ]}>
           {this.StatusBarDesign()}
-          <TouchableOpacity onPress={this.props.onPress}>
+          <TouchableOpacity onPress={this.props.onBackPressed}>
             <Image
               source={require('../assests/left-arrow.png')}
               style={styles.backButton}/>
@@ -35,7 +35,7 @@ export default class Header extends Component {
           <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
             {this.props.headerText}
           </Text>
-          <TouchableOpacity onPress={this.props.onPress}>
+          <TouchableOpacity onPress={this.props.onSearchPressed}>
             <Image
               source={require('../assests/search.png')}
               style={styles.searchIconStyle}
@@ -56,7 +56,7 @@ export default class Header extends Component {
             <Text style={[styles.textStyle, {fontSize: headerTextSize}]}>
               {this.props.headerText}
             </Text>
-            <TouchableOpacity onPress={this.props.onPress}>
+            <TouchableOpacity onPress={this.props.onSearchPressed}>
               <Image
                 source={require('../assests/search.png')}
                 style={styles.searchIconStyle}/>
@@ -73,7 +73,7 @@ export default class Header extends Component {
               {backgroundColor: headerBackground},
             ]}>
             {this.StatusBarDesign()}
-            <TouchableOpacity onPress={this.props.onPress}>
+            <TouchableOpacity onPress={this.props.onBackPressed}>
               <Image
                 source={require('../assests/left-arrow.png')}
                 style={styles.backButton}/>
