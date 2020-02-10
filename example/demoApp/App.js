@@ -1,12 +1,14 @@
 import React from 'react';
-import {StyleSheet, View, ToastAndroid } from 'react-native';
+import {StyleSheet, View, ToastAndroid , ScrollView} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createAppContainer} from 'react-navigation';
 // import Tile from './src/Tile';
 // import Text from './src/Text';
 // import Avatar from './src/Avatar';
 // import Thumbnail from './src/Thumbnail';
-import { Avatar, Header, Thumbnail, Button, Spinner, Tile, FloatingButton, Text} from './src';
+import { Avatar, Header, Button, Spinner, Tile, FloatingButton, } from './src';
+import Text from './src/Text';
+import Thumbnail from './src/Thumbnail';
 
 const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
 
@@ -58,9 +60,10 @@ class SpinnerScreen extends React.Component {
 class ButtonScreen extends React.Component {
   render() {
     return(
-      <View>
+      <ScrollView >
+      <View style={styles.ButtonContainer}>
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 30,  }}>Button</Text>
+        <Text h4 h4style={{ fontSize: 30,  }}>Button</Text>
       </View>
       <Button
           text="Primary"
@@ -89,7 +92,7 @@ class ButtonScreen extends React.Component {
       />
 
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 30,  }}>Round Button</Text>
+        <Text h4 h4style={{ fontSize: 30,  }}>Round Button</Text>
       </View>
       <Button
           text="Primary"
@@ -123,7 +126,7 @@ class ButtonScreen extends React.Component {
       />
 
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 30,  }}>Outline Button</Text>
+        <Text h4 h4style={{ fontSize: 30,  }}>Outline Button</Text>
       </View>
       <Button
           text="Primary"
@@ -162,7 +165,7 @@ class ButtonScreen extends React.Component {
       />
 
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 30,  }}>Full Button</Text>
+        <Text h4 h4style={{ fontSize: 30,  }}>Full Button</Text>
       </View>
       <Button
           full
@@ -196,7 +199,7 @@ class ButtonScreen extends React.Component {
       />
 
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 30,  }}>Disabled Button</Text>
+        <Text h4 h4style={{ fontSize: 30,  }}>Disabled Button</Text>
       </View>
       <Button
           disabled
@@ -230,7 +233,7 @@ class ButtonScreen extends React.Component {
       />
 
       <View style={styles.containerText}>
-        <Text style={{ fontSize: 25,  }}>Different sizes</Text>
+        <Text h4 h4style={{ fontSize: 25,  }}>Different sizes</Text>
       </View>
       <Button
           size = "small"
@@ -250,6 +253,7 @@ class ButtonScreen extends React.Component {
           onPress={() => null}
       />
       </View>
+      </ScrollView>
     )
   }
 }
@@ -286,10 +290,10 @@ class TextScreen extends React.Component {
   render() {
     return (
       <View style={styles.TextContainer}>
-      <Text h1 h1Style={{color: 'blue', fontStyle: 'italic' }}>Title 1</Text>
-      <Text h2 h2Style={{color: 'green', fontStyle: 'italic' }}>Title 2</Text>
-      <Text h3 h3Style={{color: 'red', fontStyle: 'italic' }}>Title 3</Text>
-      <Text h4 h4Style={{color: 'yellow', fontStyle: 'italic' }}>Title 4</Text>
+      <Text h1 h1Style={{color: 'blue', fontStyle: 'italic' }}>Heading 1</Text>
+      <Text h2 h2Style={{color: 'green', fontStyle: 'italic' }}>Heading 2</Text>
+      <Text h3 h3Style={{color: 'red', fontStyle: 'italic' }}>Heading 3</Text>
+      <Text h4 h4Style={{color: 'yellow', fontStyle: 'italic' }}>Heading 4</Text>
     </View>
     );
   }
@@ -300,15 +304,15 @@ class ThumbnailScreen extends React.Component {
   {
     const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
     return (
-      <View style={styles.container}>
-        <Text style={{fontWeight: 'bold'}}>Rounded Thumbnail</Text>
+      <View style={styles.ThumbnailsContainer}>
+        <Text h4 h4style={{fontWeight: 'bold', }}>Rounded Thumbnail</Text>
         <Text>Small</Text> 
         <Thumbnail Rounded size="small"  source={{uri: uri}} />
         <Text>Medium</Text>
         <Thumbnail Rounded size="medium"  source={{uri: uri}} />
         <Text>Large</Text>
         <Thumbnail Rounded size="large"  source={{uri: uri}} />
-        <Text style={{fontWeight:'bold'}}>Square Thumbnail</Text>
+        <Text h4 h4style={{fontWeight:'bold'}}>Square Thumbnail</Text>
         <Text> Small</Text>
         <Thumbnail size="small" source={{uri: uri}} />
         <Text>Medium</Text>
@@ -339,6 +343,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   ThumbnailsContainer: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 40,
+    paddingVertical: 40
+  },
+  containerText: {
+
+  },
+  ButtonContainer: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
