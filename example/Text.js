@@ -1,8 +1,5 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import Text from './src/Text';
 
-export default function App() {
+export default function Text() {
   return (
     <View style={styles.container}>
       <Text h1 h1Style={{color: 'blue', fontStyle: 'italic' }}>Title 1</Text>
