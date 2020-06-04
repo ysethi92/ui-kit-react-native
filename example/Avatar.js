@@ -1,12 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Avatar from './src/Avatar';
-
-
 
 const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
 
-export default class App extends React.Component {
+export default class Avatar extends React.Component {
   render(){
     
     return(
