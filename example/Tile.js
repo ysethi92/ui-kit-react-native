@@ -1,7 +1,3 @@
-import React from 'react';
-import { StyleSheet, View, ImageBackground, Dimensions } from 'react-native';
-import Text from './src/Text';
-import Tile from './src/Tile';
 
 const width = Dimensions.get('window').width;
 const height = width * 0.8
