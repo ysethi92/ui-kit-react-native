@@ -1,8 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Thumbnail from './src/Thumbnail';
 
-export default class App extends React.Component {
+export default class Thumbnail extends React.Component {
 render() 
 {
   const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
