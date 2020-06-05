@@ -59,3 +59,27 @@ Description of Button!!!!!!!!!!
 |footer|-|-|Displays text as a footer for cards|
 |button|-|-|To navigate on the click of a card item|
 |border|false|boolean|n Adds border to the cardItems |
+
+## 4. Checkbox
+Description of Checkbox!!!!!!!!!!
+
+### Props Reference:
+
+| Property | Default | Option | Description |
+|---------:|--------:|-------:|------------:|
+|entries |-|-|List of the description of thecheckboxes.|
+|backgroundColor |red||Color of the selected checkboxes|
+
+## 5. Header
+Description of Header!!!!!!!!!!
+
+### Props Reference:
+
+| Property | Default | Option | Description |
+|---------:|--------:|-------:|------------:|
+|search |-|-|Search icon in the header|
+|back |-|-|Back button in the header|
+|hidden|true|-|By default, the status bar is hidden|
+|headerText|Header|-|Description of the header|
+|textSize |22|-|The text size of the description|
+|backgraoundColor |skyblue|-|The background color of the header.|
