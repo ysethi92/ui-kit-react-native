@@ -1,4 +1,22 @@
-# ui-kit-react-native
+# UI-Kit-for-react-native
 
-Description!!
+Description of Library!!
+
+# Installation
+
+You can clone this git repository by using following steps
+
+```bash
+
+```
+
+# Components 
+
+1. Avatar
+
+
+
+
+
+
 
