@@ -55,9 +55,7 @@ Description of Button!!!!!!!!!!
 | Property | Default | Option | Description |
 |---------:|--------:|-------:|------------:|
 |header |-|-|Displays text as a header for cards|
-|body |-|-|Defines section for the body of the card. 
-The child components are rendered with 
-proper spacing and alignment.|
+|body |-|-|Defines section for the body of the card.The child components are rendered with proper spacing and alignment.|
 |footer|-|-|Displays text as a footer for cards|
 |button|-|-|To navigate on the click of a card item|
 |border|false|boolean|n Adds border to the cardItems |
