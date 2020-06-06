@@ -1,6 +1,6 @@
 # UI-Kit-for-react-native
 
-Description of Library!!
+A collection of ready to use React Native components which you can edit or override according to your need.
 
 # Installation
 
@@ -13,7 +13,12 @@ You can clone this git repository by using following steps
 # Components 
 
 ## 1. Avatar
-Description of Avatar!!!!!!!!!!
+Avatars are used to visually represent a user or a person with which it is associated
+
+### Usage
+```javascript
+  
+```
 
 ### Props Reference:
 
@@ -27,7 +32,7 @@ Description of Avatar!!!!!!!!!!
 |image |-|-|Represent image as an avatar|
 
 ## 2. Button
-Description of Button!!!!!!!!!!
+For interaction between user and system buttons are used. They are the touchable component found in almost every interactive application. 
 
 ### Props Reference:
 
@@ -61,7 +66,7 @@ Description of Button!!!!!!!!!!
 |border|false|boolean| Adds border to the cardItems |
 
 ## 4. Checkbox
-Description of Checkbox!!!!!!!!!!
+Checkbox are used to select between the choices where the multiple options can be selected.
 
 ### Props Reference:
 
@@ -71,7 +76,7 @@ Description of Checkbox!!!!!!!!!!
 |backgroundColor |red||Color of the selected checkboxes|
 
 ## 5. Floating Button
-Description of Floating Button!!!!!!!!!!
+Floating buttons are overlay button found in most of the latest apps.
 
 ### Props Reference:
 
@@ -85,7 +90,7 @@ Description of Floating Button!!!!!!!!!!
 |image |-|-|Represent image as an avatar|
 
 ## 6. Header
-Description of Header!!!!!!!!!!
+Header represents the information about the screen where the user is at that moment. 
 
 ### Props Reference:
 
@@ -99,7 +104,7 @@ Description of Header!!!!!!!!!!
 |backgraoundColor |skyblue|-|The background color of the header.|
 
 ## 7. Radio Button
-Description of Radio Button!!!!!!!!!!
+Radio Button are provided where only one option needs to be selected between the given items.
 
 ### Props Reference:
 
@@ -110,7 +115,7 @@ Description of Radio Button!!!!!!!!!!
 
 
 ## 8. Spinner
-Description of Spinner!!!!!!!!!!
+Spinner represents loading screen
 
 ### Props Reference:
 
@@ -120,7 +125,7 @@ Description of Spinner!!!!!!!!!!
 |color |black|-|Color of a spinner|
 
 ## 9. Text
-Description of Text!!!!!!!!!!
+Text includes words and sentences of different styles.
 
 ### Props Reference:
 
@@ -137,7 +142,7 @@ Description of Text!!!!!!!!!!
 |Style |Text style(object)|-|add additional styling for Text (optional)|
 
 ## 10. Thumbnail
-Description of Thumbnail!!!!!!!!!!
+It is the small image representation of larger image.
 
 ### Props Reference:
 
