@@ -140,7 +140,26 @@ For interaction between user and system buttons are used. They are the touchable
 
 ## 4. Checkbox
 Checkbox are used to select between the choices where the multiple options can be selected.
-
+### Usage
+```javascript
+const checkBoxEntries = [
+	{
+		text: 'Yes',
+		checked: false,
+	},
+	{
+		text: 'No',
+		checked: false,
+	},
+	{
+		text: 'None',
+		checked: false,
+	},
+];
+<CheckBox
+				entries={checkBoxEntries}
+				backgroundColor="red" />
+```
 ### Props Reference:
 
 | Property | Default | Option | Description |
@@ -176,6 +195,17 @@ Floating buttons are overlay button found in most of the latest apps.
 Header represents the information about the screen where the user is at that moment.
 
 ### Usage
+```javascript
+<Header
+        onBackPressed={() => ToastAndroid.show('Please implement a specific task!!!', ToastAndroid.SHORT)}
+        onSearchPressed={() => ToastAndroid.show('Please implement a specific!!!', ToastAndroid.SHORT)}
+        search
+        back
+        hidden={true}
+        headerText="Header"
+        textSize={22}
+        backgroundColor="skyblue"/>
+```
 
 ### Props Reference:
 
@@ -249,6 +279,22 @@ Header represents the information about the screen where the user is at that mom
 Radio Button are provided where only one option needs to be selected between the given items.
 
 ### Usage
+```javascript
+const radioButtonEntries = [
+	{
+		text: 'Yes',
+	},
+	{
+		text: 'No',
+	},
+	{
+		text: 'None'
+	},
+];
+<RadioButton
+				entries={radioButtonEntries}
+				backgroundColor="pink" />
+```
 
 ### Props Reference:
 
