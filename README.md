@@ -18,7 +18,17 @@ import {<component-name>} from './ui-kit-react-native/components'
 # Components 
 
 ### List of Components:
-1. [Avatar](#2-button)
+1. [Avatar](#1-avatar)
+2. [Button](#2-button)
+3. [Card](#3-card)
+4. [Checkbox](#4-checkbox)
+5. [Floating Button](#5-floating-button)
+6. [Header](#6-header)
+7. [List](#7-list)
+8. [Radio Button](#8-radio-button)
+9. [Spinner](#9-spinner)
+10.[Text](#2-text)
+11.[Thumbnail](#11-thumbnail)
 
 ## 1. Avatar
 Avatars are used to visually represent a user or a person with which it is associated
