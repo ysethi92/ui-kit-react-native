@@ -58,7 +58,7 @@ Description of Button!!!!!!!!!!
 |body |-|-|Defines section for the body of the card.The child components are rendered with proper spacing and alignment.|
 |footer|-|-|Displays text as a footer for cards|
 |button|-|-|To navigate on the click of a card item|
-|border|false|boolean|n Adds border to the cardItems |
+|border|false|boolean| Adds border to the cardItems |
 
 ## 4. Checkbox
 Description of Checkbox!!!!!!!!!!
