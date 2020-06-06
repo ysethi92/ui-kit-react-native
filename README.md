@@ -42,7 +42,26 @@ Avatars are used to visually represent a user or a person with which it is assoc
 For interaction between user and system buttons are used. They are the touchable component found in almost every interactive application. 
 
 ```javascript
-
+</View>
+  <Button
+      text="Primary"
+      round
+      theme="primary"
+      onPress={() => null}
+  />
+  <Button
+      text="Success"
+      round
+      theme="success"
+      onPress={() => null}
+  />
+  <Button
+      text="Warning"
+      round
+      theme="warning"
+      onPress={() => null}
+  />
+</View>
 ```
 ### Props Reference:
 
@@ -87,6 +106,14 @@ Checkbox are used to select between the choices where the multiple options can b
 
 ## 5. Floating Button
 Floating buttons are overlay button found in most of the latest apps.
+
+```javascript
+<FB 
+  onPress = {this.clickHandler}
+  style =  {styles.FB} 
+  imageUri = {require('./assets/plus-icon.png')}
+ />
+```
 
 ### Props Reference:
 
