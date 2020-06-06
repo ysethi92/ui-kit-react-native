@@ -157,8 +157,8 @@ const checkBoxEntries = [
 	},
 ];
 <CheckBox
-				entries={checkBoxEntries}
-				backgroundColor="red" />
+	entries={checkBoxEntries}
+	backgroundColor="red" />
 ```
 ### Props Reference:
 
@@ -197,14 +197,14 @@ Header represents the information about the screen where the user is at that mom
 ### Usage
 ```javascript
 <Header
-        onBackPressed={() => ToastAndroid.show('Please implement a specific task!!!', ToastAndroid.SHORT)}
-        onSearchPressed={() => ToastAndroid.show('Please implement a specific!!!', ToastAndroid.SHORT)}
-        search
-        back
-        hidden={true}
-        headerText="Header"
-        textSize={22}
-        backgroundColor="skyblue"/>
+	onBackPressed={() => ToastAndroid.show('Please implement a specific task!!!', ToastAndroid.SHORT)}
+	onSearchPressed={() => ToastAndroid.show('Please implement a specific!!!', ToastAndroid.SHORT)}
+	search
+	back
+	hidden={true}
+	headerText="Header"
+	textSize={22}
+	backgroundColor="skyblue"/>
 ```
 
 ### Props Reference:
@@ -292,8 +292,8 @@ const radioButtonEntries = [
 	},
 ];
 <RadioButton
-				entries={radioButtonEntries}
-				backgroundColor="pink" />
+	entries={radioButtonEntries}
+	backgroundColor="pink" />
 ```
 
 ### Props Reference:
