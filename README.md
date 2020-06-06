@@ -17,7 +17,14 @@ Avatars are used to visually represent a user or a person with which it is assoc
 
 ### Usage
 ```javascript
-  
+<View style={styles.container}>
+    <Text>Avatar Icon</Text>
+    <Avatar Icon name="ios-menu" size={40} color="white"/>
+    <Text>Avatar Label</Text>
+    <Avatar Label name="AG" size={40} color="white" />
+    <Text>Avatar Image</Text>
+    <Avatar Image source={{uri:uri}} size={40} />
+</View>
 ```
 
 ### Props Reference:
@@ -34,6 +41,9 @@ Avatars are used to visually represent a user or a person with which it is assoc
 ## 2. Button
 For interaction between user and system buttons are used. They are the touchable component found in almost every interactive application. 
 
+```javascript
+
+```
 ### Props Reference:
 
 | Property | Default | Option | Description |
