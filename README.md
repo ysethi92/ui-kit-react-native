@@ -1,13 +1,18 @@
 # UI-Kit-for-react-native
 We have made effective building blocks referred to as components. The Components are constructed in pure [React Native](https://github.com/facebook/react-native) platform along with some JavaScript functionality with rich set of customisable properties. These components allow you to quickly build the perfect interface.
-# A collection of ready to use React Native components which you can edit or override according to your need.
+A collection of ready to use React Native components which you can edit or override according to your need.
 
 # Installation
 
-You can clone this git repository by using following steps
-
+You can use the components by using following steps
+1. Open command prompt and navigate to your working directory.
+2. Clone the repository in your project directory.
 ```bash
-
+git clone https://github.com/ysethi92/ui-kit-react-native.git
+```
+3. Import the Component needed in your project.
+```javascript
+import {<component-name>} from './ui-kit-react-native/components'
 ```
 
 # Components 
