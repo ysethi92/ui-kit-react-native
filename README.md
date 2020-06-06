@@ -41,6 +41,8 @@ Avatars are used to visually represent a user or a person with which it is assoc
 ## 2. Button
 For interaction between user and system buttons are used. They are the touchable component found in almost every interactive application. 
 
+
+### Usage
 ```javascript
 </View>
   <Button
@@ -84,6 +86,30 @@ For interaction between user and system buttons are used. They are the touchable
 * Takes input such as Text, Button, Image, Thumbnail, Icon.
 * The card takes any number of CardItem.
 
+### Usage
+```javascript
+<Card>
+  <CardItem header >
+      <Left>
+        <Thumbnail Rounded size="medium" source={require('./assets/Amish-Tripathi.jpg')}>
+        </Thumbnail>
+      </Left>
+      <Body>
+        <Text>Amish Tripathi</Text>
+        <Text note>Author</Text>
+      </Body>
+
+    </CardItem>
+    <CardItem body>
+
+        <Image source={require('./assets/bg.jpg')} style={{height: 100, width: '100%'}}/>
+
+    </CardItem>
+  
+</Card>
+```
+
+
 ### Props Reference:
 
 | Property | Default | Option | Description |
@@ -107,6 +133,8 @@ Checkbox are used to select between the choices where the multiple options can b
 ## 5. Floating Button
 Floating buttons are overlay button found in most of the latest apps.
 
+### Usage
+
 ```javascript
 <FB 
   onPress = {this.clickHandler}
@@ -127,7 +155,9 @@ Floating buttons are overlay button found in most of the latest apps.
 |image |-|-|Represent image as an avatar|
 
 ## 6. Header
-Header represents the information about the screen where the user is at that moment. 
+Header represents the information about the screen where the user is at that moment.
+
+### Usage
 
 ### Props Reference:
 
@@ -140,8 +170,67 @@ Header represents the information about the screen where the user is at that mom
 |textSize |22|-|The text size of the description|
 |backgraoundColor |skyblue|-|The background color of the header.|
 
-## 7. Radio Button
+## 7. List
+* List: This component defines a section to include your list items.
+* ListItem:
+    * This is the child component of List.
+    * Defines a list item.
+    * Adds border at bottom of each ListItem.
+    * The list takes any number of ListItem.
+    * Takes input such as Text, Badge, Thumbnail, Icon.
+
+
+### Usage
+```javascript
+<List>
+     <ListItem divider>
+       <Text h4>A</Text>
+     </ListItem>
+     <ListItem>
+       <Left><Text>Anmol</Text></Left>
+       <Right><Icon name="angle-right"/></Right>
+     </ListItem>
+     <ListItem onPress={() => alert("HI")}>
+       <Text>Akbar</Text>
+     </ListItem>
+     <ListItem >
+     <Left>
+         <Thumbnail Rounded size="small" source={require('./assets/Amish-Tripathi.jpg')}>
+         </Thumbnail>
+       </Left>
+       <Body>
+         <Text style={{fontWeight: 'bold'}}>Amish Tripathi</Text>
+         <Text note>Author</Text>
+       </Body>
+       <Right><Text note>3:45 pm</Text></Right>
+     </ListItem>
+
+     <ListItem>
+       <Left><Text>Baban</Text></Left>
+       <Right><Icon name="angle-right"/></Right>
+     </ListItem>
+
+     <ListItem>
+       <Left><Text>Cisco</Text></Left>
+       <Right><Icon name="angle-right"/></Right>
+     </ListItem>
+     <ListItem onPress={() => alert("HI")}>
+       <Text>Clark</Text>
+     </ListItem>
+</List>
+```
+
+### Props Reference:
+
+| Property | Default | Option | Description |
+|---------:|--------:|-------:|------------:|
+|divider |-|boolean|It helps to organize and group the list items.|
+|icon |||To have list styling of icons|
+
+## 8. Radio Button
 Radio Button are provided where only one option needs to be selected between the given items.
+
+### Usage
 
 ### Props Reference:
 
@@ -151,8 +240,16 @@ Radio Button are provided where only one option needs to be selected between the
 |backgroundColor |red||Color of the selected button|
 
 
-## 8. Spinner
+## 9. Spinner
 Spinner represents loading screen
+
+### Usage
+```javascript
+<Spinner
+    size="large"
+    color="skyblue"
+/>
+```
 
 ### Props Reference:
 
@@ -161,8 +258,18 @@ Spinner represents loading screen
 |size |small|-|The spinner has two sizes: small and large|
 |color |black|-|Color of a spinner|
 
-## 9. Text
+## 10. Text
 Text includes words and sentences of different styles.
+
+### Usage
+```javascript
+<View style={styles.container}>
+  <Text h1 h1Style={{color: 'blue', fontStyle: 'italic' }}>Title 1</Text>
+  <Text h2 h2Style={{color: 'green', fontStyle: 'italic' }}>Title 2</Text>
+  <Text h3 h3Style={{color: 'red', fontStyle: 'italic' }}>Title 3</Text>
+  <Text h4 h4Style={{color: 'yellow', fontStyle: 'italic' }}>Title 4</Text>
+</View>
+```
 
 ### Props Reference:
 
@@ -178,8 +285,30 @@ Text includes words and sentences of different styles.
 |h4Style |Text style(object)|-|Styling for when *h4* is set (optional)|
 |Style |Text style(object)|-|add additional styling for Text (optional)|
 
-## 10. Thumbnail
+## 11. Thumbnail
 It is the small image representation of larger image.
+
+### Usage
+```javascript
+const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
+
+<View style={styles.container}>
+  <Text style={{fontWeight: 'bold'}}>Rounded Thumbnail</Text>
+  <Text>Small</Text> 
+  <Thumbnail Rounded size="small"  source={{uri: uri}} />
+  <Text>Medium</Text>
+  <Thumbnail Rounded size="medium"  source={{uri: uri}} />
+  <Text>Large</Text>
+  <Thumbnail Rounded size="large"  source={{uri: uri}} />
+  <Text style={{fontWeight:'bold'}}>Square Thumbnail</Text>
+  <Text> Small</Text>
+  <Thumbnail size="small" source={{uri: uri}} />
+  <Text>Medium</Text>
+  <Thumbnail size="medium" source={{uri: uri}} />
+  <Text>Large</Text>
+  <Thumbnail size="large" source={{uri: uri}} />
+</View>
+```
 
 ### Props Reference:
 
